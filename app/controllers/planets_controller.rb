@@ -7,4 +7,25 @@ class PlanetsController < ApplicationController
 
     render json: planets
   end
+
+  def show
+    planet = Planet.find(params[:id])
+    render json: planet
+  end
+
+  def create
+
+  end
+
+  def patch
+
+  end
+
+  def put
+
+  end
+
+  def destroy
+
+  end
 end
